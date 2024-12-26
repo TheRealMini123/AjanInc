@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ajan Inc - Login</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+      }
+      header {
+        background-color: #2c3e50;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      nav {
+        background-color: #34495e;
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+        padding: 10px 20px;
+      }
+      nav a:hover {
+        background-color: #1abc9c;
+        color: white;
+        border-radius: 5px;
+      }
+      main {
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        background: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+      h2 {
+        color: #2c3e50;
+        text-align: center;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+      label {
+        margin-bottom: 5px;
+        color: #333;
+      }
+      input {
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+      button {
+        padding: 10px;
+        background-color: #1abc9c;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      button:hover {
+        background-color: #16a085;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Ajan Inc Login</h1>
+    </header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="agents.html">Agents</a>
+    </nav>
+    <main>
+      <h2>Login</h2>
+      <form action="#" method="POST">
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          required
+        />
+
+        <label for="email">Gmail:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your Gmail"
+          required
+        />
+
+        <button type="submit">Login</button>
+      </form>
+    </main>
+  </body>
+</html>
