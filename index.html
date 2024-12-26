@@ -38,35 +38,6 @@
       main {
         padding: 20px;
       }
-      .properties {
-        display: grid;
-        grid-template-columns: repeat(
-          auto-fit,
-          minmax(300px, 1fr)
-        ); /* Responsive grid with flexible column width */
-        gap: 20px;
-      }
-      .property {
-        border: 1px solid #ddd;
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      }
-      .property img {
-        width: 100%; /* Ensures image takes up the full width of the container */
-        height: auto; /* Keeps the image's aspect ratio intact */
-        object-fit: cover; /* Ensures the image covers the area while maintaining the aspect ratio */
-      }
-      .property-details {
-        padding: 15px;
-      }
-      .property-details h3 {
-        margin: 0 0 10px;
-        color: #2c3e50;
-      }
-      .property-details p {
-        margin: 5px 0;
-      }
       footer {
         background-color: #2c3e50;
         color: white;
@@ -100,49 +71,14 @@
       <a href="agents.html">Agents</a>
     </nav>
     <main>
-      <h2>Available Properties</h2>
-      <div class="properties">
-        <div class="property">
-          <img
-            src="https://via.placeholder.com/600x400"
-            alt="England Property"
-          />
-          <div class="property-details">
-            <h3>England Property</h3>
-            <p>Charming countryside property with breathtaking views.</p>
-            <p><strong>Price:</strong> €5,600</p>
-          </div>
-        </div>
-        <div class="property">
-          <img
-            src="https://via.placeholder.com/600x400"
-            alt="Mexico Property"
-          />
-          <div class="property-details">
-            <h3>Mexico Property</h3>
-            <p>Luxurious beachfront property with serene ocean views.</p>
-            <p><strong>Price:</strong> €10,000</p>
-          </div>
-        </div>
-        <div class="property">
-          <img
-            src="https://via.placeholder.com/600x400"
-            alt="Kosovo Property"
-          />
-          <div class="property-details">
-            <h3>Kosovo Property</h3>
-            <p>Beautiful rural retreat surrounded by nature.</p>
-            <p><strong>Price:</strong> €9,000</p>
-          </div>
-        </div>
-      </div>
+      <h2>Property Locations</h2>
 
       <!-- Map Section for England -->
       <div class="map-container">
         <h3>England Property Location</h3>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110468.82247018557!2d-0.47879097045921106!3d51.5073509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b3e1b5a59fb%3A0x3f9e09d12b51d3ac!2sLondon!5e0!3m2!1sen!2suk!4v1671698883629!5m2!1sen!2suk"
-          allowfullscreen="true"
+          allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
@@ -153,7 +89,7 @@
         <h3>Mexico Property Location</h3>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423266.8283837137!2d-99.7466961531297!3d19.432608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1cc50c45ccf87%3A0xf37c2216a6a3b1b0!2sMexico%20City!5e0!3m2!1sen!2smx!4v1671699435964!5m2!1sen!2smx"
-          allowfullscreen="true"
+          allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
@@ -164,7 +100,7 @@
         <h3>Kosovo Property Location</h3>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194370.99214066135!2d20.8717547!3d42.6026355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1352c3ec7f8b8fbf%3A0x710d82f90e8a3600!2sPristina%2C%20Kosovo!5e0!3m2!1sen!2s!4v1671700327357!5m2!1sen!2s"
-          allowfullscreen="true"
+          allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
@@ -175,3 +111,4 @@
     </footer>
   </body>
 </html>
+
