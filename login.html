@@ -86,7 +86,7 @@
     </nav>
     <main>
       <h2>Login</h2>
-      <form action="https://therealmini123.github.io/index.html" method="GET">
+      <form id="loginForm" action="javascript:void(0)">
         <label for="name">Name:</label>
         <input
           type="text"
@@ -108,5 +108,21 @@
         <button type="submit">Login</button>
       </form>
     </main>
+
+    <script>
+      document.getElementById("loginForm").addEventListener("submit", function () {
+        // Get user inputs
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+
+        // Store user data in localStorage
+        localStorage.setItem("userName", name);
+        localStorage.setItem("userEmail", email);
+
+        // Redirect to the index page
+        window.location.href = "https://therealmini123.github.io/index.html";
+      });
+    </script>
   </body>
 </html>
+
